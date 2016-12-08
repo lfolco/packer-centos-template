@@ -13,7 +13,7 @@
       "type": "virtualbox-iso",
       "vm_name": "centos-vm",
       "boot_wait": "10s",
-      "disk_size": 10000,
+      "disk_size": 15000,
       "guest_os_type": "RedHat_64",
       "http_directory": "http",
 
@@ -43,7 +43,7 @@
   
   "post-processors": [
     {
-      "output": "vagrant-centos-{{user `redhat_release`}}.box",
+      "output": "vb-vagrant-centos-{{user `redhat_release`}}.box",
       "compression_level": "6",
       "type": "vagrant"
     }
